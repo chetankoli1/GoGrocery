@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/background"
+    tools:context=".Activites.RegisterActivity">
+
+    <TextView
+        android:id="@+id/welcomeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lgoinTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeTv"
+        android:layout_centerHorizontal="true"
+        android:text="User Registration"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lgoinTv"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Email"
+            android:textColor="@color/black" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/emailCard"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmail"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/edtEmailUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:padding="10dp" />
+        </soup.neumorphism.NeumorphCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/r1"
+        android:id="@+id/r3"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Full name"
+            android:textColor="@color/black" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/addCard"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/editNameUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:inputType="textPostalAddress|textMultiLine"
+                android:padding="10dp" />
+        </soup.neumorphism.NeumorphCardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/r5"
+        android:id="@+id/r2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="textEmailAddress"
+            android:text="Password"
+            android:textColor="@color/black" />
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/passCard"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            app:neumorph_shapeType="pressed"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPassword">
+            <EditText
+                android:drawablePadding="10dp"
+                android:id="@+id/editPasswordUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:padding="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/r3"
+        android:id="@+id/r4"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Enter Phone No"
+            android:textColor="@color/black" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/AdressCard"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPhone"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/edtPhoneUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:padding="10dp" />
+        </soup.neumorphism.NeumorphCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/r4"
+        android:id="@+id/r5"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Enter Currect Address"
+            android:textColor="@color/black" />
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/CityCard"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            app:neumorph_shapeType="pressed"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAdress">
+            <EditText
+                android:drawablePadding="10dp"
+                android:id="@+id/edtCityUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textMultiLine|text"
+                android:padding="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+    </RelativeLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/registerBtnUser"
+        style="@style/ShapeAppearance.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r2"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:neumorph_inset="8dp"
+        app:neumorph_shadowElevation="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </soup.neumorphism.NeumorphCardView>
+</RelativeLayout>

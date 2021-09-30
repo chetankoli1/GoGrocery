@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background1"
+    tools:context=".Fragments.CartFragment">
+    <RelativeLayout
+        android:id="@+id/mainLayot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background1"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/cart_item"
+            android:id="@+id/cartItemRv"
+            android:layout_above="@+id/cr1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"/>
+       <soup.neumorphism.NeumorphCardView
+           android:id="@+id/cr1"
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:neumorph_backgroundColor="@color/background"
+           app:neumorph_shadowColorDark="@color/dark_shadow1"
+           app:neumorph_shadowColorLight="@color/light_shadow1"
+           app:neumorph_shapeAppearance="@style/Widget.Neumorph.CardView"
+           >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:layout_centerHorizontal="true"
+                   android:text="loading..."
+                   android:id="@+id/cTotal"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:layout_below="@+id/cTotal"
+                   android:layout_centerHorizontal="true"
+                   android:text="This order Contain Cash On Delevery"
+                   android:id="@+id/dummy"
+                   />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:ems="8"
+                   android:layout_marginRight="5dp"
+                   android:id="@+id/finalOrder"
+                   android:textColor="@color/black"
+                   android:text="Place Order"
+                   android:backgroundTint="@color/background1"
+                   android:layout_below="@+id/dummy"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:ems="8"
+                   android:id="@+id/clearCart"
+                   android:textColor="@color/black"
+                   android:text="Clear Cart"
+                   android:layout_toEndOf="@+id/finalOrder"
+                   android:layout_centerHorizontal="true"
+                   android:backgroundTint="@color/background1"
+                   android:layout_below="@+id/dummy"/>
+           </RelativeLayout>
+       </soup.neumorphism.NeumorphCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noData"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart are empty? Not data Found"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:neumorph_backgroundColor="@color/background"
+    style="@style/Widget.Neumorph.CardView"
+    app:neumorph_shapeAppearance="@style/Widget.Neumorph"
+    app:neumorph_shadowColorLight="@color/light_shadow"
+    app:neumorph_shadowColorDark="@color/dark_shadow"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <soup.neumorphism.NeumorphImageView
+                android:id="@+id/icon"
+                android:scaleType="fitXY"
+                style="@style/ShapeAppearance.Neumorph.ImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/loading"
+                app:neumorph_shadowColorDark="@color/dark_shadow"
+                app:neumorph_shadowColorLight="@color/light_shadow"
+                app:neumorph_shapeAppearance="@style/ShapeAppearance.Neumorph.ImageView" />
+            <RelativeLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/icon">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:text="Description" />
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc"
+                    android:text="price:- 200Rs" />
+
+                <TextView
+                    android:id="@+id/Quantiy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@id/price"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/QuantiyIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc"
+                    android:layout_toEndOf="@id/Quantiy" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/medLayout"
+            android:layout_below="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_remove_black"
+                android:id="@+id/decrementBtn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:id="@+id/quantityTv"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_add_black"
+                android:id="@+id/incrementBtn"/>
+
+        </LinearLayout>
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/addCartBtn"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            android:background="@color/background"
+            android:layout_below="@+id/medLayout"
+            >
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_shopping_cart"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/cr"
+                    android:padding="10dp"
+                    android:text="Add To Cart" />
+            </RelativeLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+    </RelativeLayout>
+
+
+
+</soup.neumorphism.NeumorphCardView>

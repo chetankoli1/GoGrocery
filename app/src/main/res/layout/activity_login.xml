@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/background"
+    tools:context=".Activites.LoginActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/welcomeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Welcome"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lgoinTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeTv"
+        android:text="User Login"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lgoinTv"
+        android:layout_marginTop="80dp"
+        android:id="@+id/r1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvEmail"
+            />
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardEmail"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_shadowElevation="3dp"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmail">
+            <EditText
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_email_edt"
+                android:id="@+id/ledtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/r1"
+        android:id="@+id/r2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvPassword"
+            />
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardPassword"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPassword">
+            <EditText
+                android:drawableStart="@drawable/ic_password_edt"
+                android:drawablePadding="10dp"
+                android:id="@+id/ledtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:padding="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tvForgot"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"
+            android:layout_below="@+id/cardPassword"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/loginBtn"
+        style="@style/ShapeAppearance.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r2"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeAppearance="@style/Widget.Neumorph">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/loginBtn"-->
+    <!--        android:layout_marginTop="35dp">-->
+
+
+    <!--        <soup.neumorphism.NeumorphImageButton-->
+    <!--            android:id="@+id/facebookBtn"-->
+    <!--            style="@style/Widget.Neumorph.ImageButton"-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:padding="25dp"-->
+    <!--            android:scaleType="centerInside"-->
+    <!--            android:src="@drawable/facebook"-->
+    <!--            app:neumorph_shadowElevation="3dp" />-->
+    <!--        <soup.neumorphism.NeumorphImageButton-->
+    <!--            android:id="@+id/twiterBtn"-->
+    <!--            android:padding="25dp"-->
+    <!--            app:neumorph_shadowElevation="3dp"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:src="@drawable/twitter"-->
+    <!--            style="@style/Widget.Neumorph.ImageButton"-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:scaleType="centerInside"-->
+    <!--            />-->
+    <!--        <soup.neumorphism.NeumorphImageButton-->
+    <!--            app:neumorph_shadowElevation="3dp"-->
+    <!--            android:id="@+id/googleBtn"-->
+    <!--            android:padding="25dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:src="@drawable/google"-->
+    <!--            style="@style/Widget.Neumorph.ImageButton"-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:scaleType="centerInside"-->
+    <!--            />-->
+    <!--    </RelativeLayout>-->
+
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/goToReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up?New User Registration?"
+        android:textColor="@color/dark_green"
+        android:textSize="20dp"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow" />
+
+
+
+</RelativeLayout>

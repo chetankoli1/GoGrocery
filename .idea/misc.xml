@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/drawable-v24/ic_baseline_remove_black.xml" value="0.25092592592592594" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/drawable-v24/ic_person_black.xml" value="0.25092592592592594" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/drawable-v24/shap_rect1.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/drawable-v24/shape_circle02.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/activity_dashboard.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/activity_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/activity_main.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/cart_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/fragment_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/fragment_home.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/fragment_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/maiin_item_list.xml" value="0.264" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/layout/row_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sk777/AndroidStudioProjects/GoGrocery/app/src/main/res/menu/user_menu.xml" value="0.19907407407407407" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
